@@ -6,7 +6,7 @@ setup:
 	@if [[ ! -f ./setup.sh ]]; then \
 		echo "Setup is already complete. You can delete this setup make target."; \
 	else \
-		./setup.sh && rm ./setup.sh; \
+		chmod 755 ./setup.sh && ./setup.sh && rm ./setup.sh; \
 	fi
 
 .PHONY: build
