@@ -21,3 +21,9 @@ The new project/module is created in the project directory:
 ```
 cd ./your-project
 ```
+
+Run setup:
+
+```
+make setup
+```
