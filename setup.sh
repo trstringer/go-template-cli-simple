@@ -9,3 +9,5 @@ find . -type f | xargs -rn 1 sed -i -e "s/go-template-cli-simple/$NEW_BASENAME/g
 
 # Reset the README, as it currently contains template instructions.
 echo "# $NEW_BASENAME" > README.md
+
+echo "Setup complete!"
