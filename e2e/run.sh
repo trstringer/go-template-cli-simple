@@ -3,7 +3,7 @@
 echo "Running e2e tests..."
 
 FAILURES=""
-for TEST_FILE in ./e2e/test_*; do
+for TEST_FILE in ./e2e/test_*.sh; do
     echo
     echo "🧪 Running test '$TEST_FILE'"
 
