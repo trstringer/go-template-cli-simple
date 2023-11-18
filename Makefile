@@ -13,3 +13,7 @@ setup:
 build:
 	mkdir -p ./dist
 	go build -o ./dist/$(PROJECT_NAME)
+
+.PHONY: e2e
+e2e:
+	./e2e/run.sh
