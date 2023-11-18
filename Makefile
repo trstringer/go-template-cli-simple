@@ -15,5 +15,5 @@ build:
 	go build -o ./dist/$(PROJECT_NAME)
 
 .PHONY: e2e
-e2e:
+e2e: build
 	./e2e/run.sh
