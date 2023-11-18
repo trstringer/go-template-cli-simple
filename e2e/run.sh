@@ -2,8 +2,6 @@
 
 echo "Running e2e tests..."
 
-make build
-
 FAILURES=""
 for TEST_FILE in ./e2e/test_*; do
     echo
