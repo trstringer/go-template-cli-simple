@@ -33,3 +33,17 @@ Run setup:
 ```
 make setup
 ```
+
+## Tests
+
+Run unit tests:
+
+```
+make test
+```
+
+Run e2e tests:
+
+```
+make e2e
+```
