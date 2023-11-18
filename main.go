@@ -12,13 +12,20 @@ const (
 	flagExclamation string = "exclamation"
 )
 
-func exec(cCtx *cli.Context) error {
-	output := cCtx.String(flagMessage)
-	if cCtx.Bool(flagExclamation) {
-		output = output + "!"
+func messageExclamation(message string, useExclamation bool) string {
+	if useExclamation {
+		return message + "!"
 	}
+	return message
+}
 
-	fmt.Println(output)
+func exec(cCtx *cli.Context) error {
+	outputMessage := messageExclamation(
+		cCtx.String(flagMessage),
+		cCtx.Bool(flagExclamation),
+	)
+
+	fmt.Println(outputMessage)
 	return nil
 }
 
