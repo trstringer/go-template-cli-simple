@@ -12,7 +12,7 @@ setup:
 .PHONY: build
 build:
 	mkdir -p ./dist
-	go build -o ./dist/$(PROJECT_NAME)
+	go build -o ./dist/$(PROJECT_NAME) ./cmd
 
 .PHONY: test
 test:
