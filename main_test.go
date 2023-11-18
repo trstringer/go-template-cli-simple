@@ -10,7 +10,7 @@ func TestMessageWithExclamation(t *testing.T) {
 		expected       string
 	}{
 		{
-			name:           "no_exclamation",
+			name:           "without_exclamation",
 			input:          "test",
 			useExclamation: false,
 			expected:       "test",
