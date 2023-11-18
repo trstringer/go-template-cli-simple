@@ -14,6 +14,10 @@ build:
 	mkdir -p ./dist
 	go build -o ./dist/$(PROJECT_NAME)
 
+.PHONY: test
+test:
+	go test -v ./...
+
 .PHONY: e2e
 e2e: build
 	./e2e/run.sh
